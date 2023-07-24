@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="budget.css">
+    <title>Gestion de Budget</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400&family=Montserrat:ital,wght@0,300;1,200&family=Noto+Sans:wght@300&family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="containerbudget">
+        <div class="titre-container">
+            <h1><span class="lettre1">B</span>udget <span class="classe1"> gestion des budgets</span></span></h1>
+        </div><br><br>
+        <div class="partie1" id="partie1">
+            <table class="budget">
+                <tr>
+                    <th>Budget</th>
+                </tr>
+               <!-- <tr>
+
+                   <td>0CFA</td> 
+                </tr>-->
+            </table>     
+            <table class="depense">     
+               <tr>
+                    <th>Depense</th>
+                </tr>
+                 <!-- <tr>
+                    <td>0CFA</td>
+                 </tr>  -->
+                    
+              
+            </table>   
+            <table class="solde"> 
+                <tr>
+                    <th>Solde</th>
+                </tr>
+                 <!-- <tr>
+                 <td>0CFA</td> 
+                </tr> -->
+
+            </table>
+
+        </div>
+        <br><br>
+        <div class="partie2" id="partie2">
+            <div id ='listedep'>
+            <table class="liste-depense">
+             <caption>Liste des depenses</caption>
+                <tr>
+                    <th>Titre</th>
+                    <th>Montant</th>
+                    <th>Actions</th>
+                </tr>
+               <!--<tr>
+                    <td>Nourriture</td>
+                    <td>40.000F CFA</td>
+                    <td>
+                    <button id="supp" class="buttonsupp>Supprimer</button>
+                     </td>
+                </tr>
+                <tr>
+                     <td>Loyer</td>
+                     <td>30.000F CFA</td>
+                     <td>
+                     <button id="supp" class="buttonsupp> Supprimer </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Transport</td>
+                    <td>10.000F CFA</td>
+                    <td>
+                    <button id="supp" class="buttonsupp> Supprimer</button>
+                    </td> 
+                </tr> -->
+
+                <tr>
+                    <td class="a1">Ajouter depense <a href="C:\Users\HP\Desktop\gestion de budget\ajouter-depense.html"><i onclick="cacher()"; class="fa-light fa-plus" style="color: #d1c000;"></i></a>
+                    </td>
+                    <td>  </td>
+                    <td></td> 
+                </tr> 
+            </table> 
+        </div>
+            <br><br>
+            <div id="listerev">
+            <table class="liste-revenu">
+            <caption>Liste des revenus </caption>
+                <tr>
+                    <th>Titre</th>
+                    <th>Montant</th>
+                    <th>Actions</th>
+                </tr>
+               <!--<tr>
+                    <td>Salaire</td>
+                    <td>300.000F CFA</td>
+                    <td> 
+                    <button id="supp" class="buttonsupp> Supprimer </button> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>Business</td>
+                    <td>100.00F CFA</td>
+                    <td>
+                    <button id="supp" class="buttonsupp">Supprimer</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bonus</td>
+                    <td>30.000F CFA</td>
+                    <td> 
+                    <button id="supp" class="buttonsupp> Supprimer </button>  
+                    </td>
+                </tr>
+                <tr> -->
+                    <td class="a2">Ajouter revenu <a href="C:\Users\HP\Desktop\gestion de budget\ajouter-revenu.html">
+                        <i class="fa-light fa-plus" style="color: #d1c000;"></i></a>
+                    </td>
+                    <td></td>
+                    <td></td> 
+                </tr>
+            </table>
+        </div>
+            
+            <br><br>
+        </div>
+
+
+    </div>
+    <script src="./budget.js"></script>
+
+
+
+    <div class="container1" id="container1">
+        <div class="titre-container">
+            <h1><span class="lettre1">B</span>udget <span class="classe1"> gestion des budgets</span></h1>
+        </div><br><br>
+        <p>AJOUTER DEPENSE</p><br><br>
+
+        <form action="">
+        <label for="titre">TITRE</label>
+        <input type="text" id="titre" name="titre">
+        <label for="montant">MONTANT</label>
+        <input type="number" id="montant" name="montant"><br>
+       <button  onclick="afficher()"; class="boutton" id="validerdep" type="submit" >Valider</button>  <br>
+        </form>
+    </div>
+</body>
+</html>
